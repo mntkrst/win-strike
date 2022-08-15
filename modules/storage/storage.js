@@ -67,8 +67,8 @@ class Storage {
 
     initBinding() {
         this.binds = {};
-        Array.from(document.querySelectorAll('[data-bind]')).forEach(el => {
-            const param = el.getAttribute('data-bind');
+        Array.from(document.querySelectorAll('[data-storage]')).forEach(el => {
+            const param = el.getAttribute('data-storage');
             if (!this.binds[param]) { this.binds[param] = []; }
             el.innerHTML = this.data[param];
             this.binds[param].push(el);

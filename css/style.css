@@ -1,0 +1,525 @@
+@font-face {
+    font-family: 'Itim';
+    src: url('./Itim-Regular.ttf');
+}
+
+body {
+    font-family: 'Itim';
+    color: #fff;
+}
+
+.view>div {
+    position: fixed;
+}
+
+.background_main {
+    background: linear-gradient(180deg, #577290 0%, #29394A 111.68%);
+}
+
+.license-text {
+    text-align: center;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 80px);
+    top: -100%;
+    overflow: auto;
+    box-sizing: border-box;
+    padding: 24px;
+}
+
+._va .license-text {
+    top: 0;
+}
+
+
+.button {
+    background: linear-gradient(180deg, #FFE600 0%, #FDB600 100%);
+    color: #000;
+    height: 48px;
+    border: 1px solid #000;
+    text-transform: uppercase;
+    line-height: 48px;
+    text-align: center;
+    border-radius: 25px;
+    width: 260px;
+    font-size: 32px;
+    cursor: pointer;
+}
+
+.button:active {
+    transform: scale(.8);
+}
+
+.license-accept-wrapper {
+    bottom: -60px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+._va .license-accept-wrapper {
+    bottom: 24px;
+}
+
+.license__ball>img {
+    width: 148px;
+    left: 10%;
+}
+
+.license__ball {
+    bottom: -150px;
+    transition: bottom 300ms ease;
+}
+
+._va .license__ball {
+    bottom: -20px;
+}
+
+.license__skittle>img {
+    height: 180px;
+}
+
+.license__skittle {
+    bottom: -190px;
+    transition: bottom 300ms ease;
+}
+
+.license__skittle_1 {
+    right: 10%;
+    transform: rotateZ(15deg);
+}
+
+.license__skittle_2 {
+    right: calc(10% + 130px);
+    transform: rotateZ(-15deg);
+}
+
+._va .license__skittle_1 {
+    bottom: -30px;
+}
+
+._va .license__skittle_2 {
+    bottom: -70px;
+}
+
+.topline {
+    top: -55px;
+    left: 0;
+    width: 100%;
+    background: #3B5067;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+    box-sizing: border-box;
+}
+
+._va .topline {
+    top: 0px;
+}
+
+.value {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: #29394A;
+    height: 42px;
+    border-radius: 21px;
+    padding: 0 21px;
+    font-size: 24px;
+}
+
+.value__img {
+    height: 24px;
+}
+
+.value__value:not(:first-child) {
+    margin-left: 8px;
+}
+
+.topline__right,
+.topline__left {
+    display: flex;
+    flex-direction: row;
+}
+
+.topline__right>*:not(:first-child) {
+    margin-left: 12px;
+}
+
+.person {
+    position: relative;
+}
+
+.person__hand {
+    position: absolute;
+    left: -9%;
+    top: 48%;
+    width: 57.6%;
+    transform-origin: 90% 50%;
+}
+
+.person__person {
+    width: 100%;
+}
+
+.menu__person {
+    width: 255px;
+    left: -300px;
+    bottom: -20px;
+    max-width: 30%;
+}
+
+._va .menu__person {
+    left: 80px;
+}
+
+.game__person {
+    width: 255px;
+    left: -300px;
+    bottom: 20px;
+    max-width: 25%;
+}
+
+._va .game__person {
+    left: 88px;
+}
+
+
+.person__ball {
+    position: absolute;
+    left: -30%;
+    top: 47%;
+    width: 44%;
+    transform-origin: 167% 28%;
+}
+
+.person__ball2 {
+    position: absolute;
+    left: 62%;
+    top: 62%;
+    width: 44%;
+}
+
+.person__rotate {
+    /* transform: rotateZ(278deg); */
+}
+
+
+@keyframes menuGirlAnim {
+    0% {
+        transform: rotate(350deg);
+    }
+
+    100% {
+        transform: rotate(280deg);
+    }
+}
+
+.menu__person .person__rotate {
+    animation: menuGirlAnim 2000ms linear alternate infinite;
+}
+
+.flor {
+    border-top: 9px solid #6D4536;
+    background: linear-gradient(180deg, #F99615 0%, #854B00 100%);
+    height: 70px;
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+}
+
+.flor_game {
+    height: 40%;
+    border-top: 20px solid #6D4536;
+}
+
+.select-row {
+    top: 50%;
+    transform: translateY(-50%);
+    right: -100%;
+}
+
+.select-row__content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.select-row__content>*:not(:first-child) {
+    margin-left: 12px;
+}
+
+._va .select-row {
+    right: 20px;
+}
+
+.level {
+    width: 74px;
+    height: 74px;
+    box-sizing: border-box;
+    background: linear-gradient(180deg, #FFE600 0%, #FDB600 100%);
+    border: 1px solid #000;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: #000;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, .25);
+    border-radius: 20px;
+    position: relative;
+}
+
+.lvel_strike::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 89px;
+    height: 27px;
+    background: url('../img/strike.png');
+    background-size: cover;
+    bottom: 80%;
+    left: -10px;
+}
+
+.lvel_strike {
+    border: 4px solid #000;
+}
+
+.select-row__header {
+    margin-bottom: 12px;
+    font-size: 18px;
+}
+
+.skittles {
+    position: fixed;
+    right: -100%;
+    height: 166px;
+    bottom: 20px;
+    width: 210px;
+}
+
+._va .skittles {
+    right: 40px;
+}
+
+.skit {
+    height: 112px;
+    position: absolute;
+}
+
+.skit_1 {
+    left: 0;
+    top: 0;
+}
+
+.skit_2 {
+    left: 37px;
+    top: 27px;
+}
+
+.skit_3 {
+    left: 74px;
+    top: 54px;
+}
+
+.skit_4 {
+    left: 111px;
+    top: 27px;
+}
+
+.skit_5 {
+    left: 148px;
+    top: 0px;
+}
+
+
+@keyframes handAnim {
+    0% {
+        transform: rotateZ(360deg);
+    }
+
+    100% {
+        transform: rotateZ(230deg);
+    }
+}
+
+.on-throw .person__rotate {
+    animation: handAnim 300ms linear forwards;
+}
+
+.ball2_to-right {
+    transition: left 1500ms linear;
+    left: calc(100vw - 80px);
+}
+
+.power {
+    width: 40%;
+    height: 12px;
+    background: linear-gradient(90deg, #FF0000 -3.87%, #34A200 25.45%, #ADFF00 51.96%, #999C00 79.03%, #FF0000 104.41%);
+    border: 1px solid #000;
+    border-radius: 6px;
+    top: -22px;
+    transition: top 300ms ease;
+    ;
+}
+
+._va .power {
+    top: 100px;
+    right: 20px;
+}
+
+.power__value {
+    transform: translateY(-50%) translateX(-50%);
+    position: absolute;
+    top: 50%;
+    height: 28px;
+    background: #fff;
+    border: 1px solid #000;
+    width: 12px;
+    border-radius: 28px;
+}
+
+.throwed {
+    transform: rotate(90deg);
+}
+
+.skit {
+    transform-origin: 50% 90%;
+    transition: transform 200ms ease;
+}
+
+.throw-button {
+    position: fixed;
+    left: calc(50% - 135px);
+    bottom: -80px;
+    width: 270px;
+}
+
+.throw-button.active {
+    bottom: 10px;
+}
+
+.end-modal {
+    z-index: 10;
+    position: fixed;
+    left: 50%;
+    top: -100%;
+    transform: translateX(-50%) translateY(-50%);
+    background: linear-gradient(180deg, #FFE600 0%, #FDB600 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 24px 24px 48px;
+    border-radius: 20px;
+    border: 1px solid #000;
+    width: 300px;
+    transition: top 300ms ease;
+}
+
+.end-modal.active {
+    top: 50%;
+}
+
+.end-modal .button {
+    background: linear-gradient(180deg, #05FF00 0%, #00AF07 100%);
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    bottom: -20px;
+    transform: translateX(-50%);
+}
+
+.topline__left img {
+    margin-right: 30px;
+}
+
+.person-select__pw {
+    width: 90px;
+    height: 90px;
+    background: linear-gradient(180deg, #FFE600 0%, #FDB600 100%);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.person-select__pw>img {
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.person-select__btn {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    height: 36px;
+    border-radius: 18px;
+    margin-top: 12px;
+    background: #29394A;
+}
+
+.person-select__btn>img {
+    height: 16px;
+    margin-left: 8px;
+}
+
+.person-select.selected .selected {
+    display: flex;
+}
+
+.person-select.to-buy .to-buy {
+    display: flex;
+}
+
+.person-select.buyed .buyed {
+    display: flex;
+    background: #0051AB;
+}
+
+.person-select__btn {
+    display: none;
+}
+
+.back {
+    background: #29394A;
+    height: 42px;
+    border-radius: 21px;
+    color: #fff;
+    padding: 0 24px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    right: 8px;
+    bottom: -56px;
+    transition: bottom 300ms ease;
+}
+
+._va .back {
+    bottom: 8px;
+}
+
+.to-shop {
+    position: fixed;
+    right: 10px;
+    bottom: -100px;
+    transition: bottom 300ms ease;
+}
+
+._va .to-shop {
+    bottom: 10px;
+    padding: 24px 24px 18px;
+    background: #29394A;
+    border-radius: 20px;
+}

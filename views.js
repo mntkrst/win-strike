@@ -1,5 +1,4 @@
-const backgrounds = new BackgroundsModule(['main']);
-
+const backgrounds = new BackgroundsModule(['main', 'menu', 'game']);
 
 const S = Storage.create(
     {
@@ -7,7 +6,16 @@ const S = Storage.create(
         bet: 10,
         music: true,
         fish: [],
-        dirt: 0
+        level: 1,
+        round: 1,
+        skitle: 5,
+        dirt: 0,
+        persons: {
+            1: 2,
+            2: 0,
+            3: 0,
+            4: 0
+        }
     },
     // {
     //     bet: (value, _S) => {
@@ -33,3 +41,16 @@ new View('license',
         backgrounds.setActive('main');
     }
 );
+
+
+new View('menu', () => {
+    backgrounds.setActive('menu');
+})
+
+new View('shop', () => {
+    backgrounds.setActive('menu');
+})
+
+const gameView = new View('game', () => {
+    backgrounds.setActive('game');
+})
